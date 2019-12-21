@@ -14,6 +14,8 @@ resource "aws_instance" "wp-project-instance" {
       }
       inline = [
         "sudo su -"
+        "yum install httpd -y",
+        "systemctl start httpd && systemctl enable httpd",
         ]
       } 
   lifecycle{
