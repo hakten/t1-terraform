@@ -14,7 +14,7 @@ resource "aws_instance" "wp-project-instance" {
       }
       inline = [
         "sudo yum install httpd -y",
-        "sudo systemctl start httpd && sudo systemctl enable httpd"
+        "sudo systemctl start httpd && sudo systemctl enable httpd",
         "sudo yum install mariadb mariadb-server -y",
         "sudo systemctl start mariadb && sudo systemctl enable mariadb",
         "sudo yum update -y",
