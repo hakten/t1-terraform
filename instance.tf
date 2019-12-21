@@ -13,9 +13,8 @@ resource "aws_instance" "wp-project-instance" {
       private_key = file(var.ssh_key_location)
       }
       inline = [
-        "sudo su -",
-        "yum install httpd -y",
-        "systemctl start httpd && systemctl enable httpd"
+        "sudo yum install httpd -y",
+        "sudo systemctl start httpd && systemctl enable httpd"
         ]
       } 
   lifecycle{
