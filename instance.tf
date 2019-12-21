@@ -1,4 +1,4 @@
-resource "aws_instance" "wp-project-instance" {
+resource "aws_instance" "wp-project-instance-2" {
   count = var.count_instance
   ami             = var.ami
   instance_type   = var.instance_type
@@ -26,7 +26,7 @@ resource "aws_instance" "wp-project-instance" {
     prevent_destroy = false
   }
   tags = {
-    Name = "wp-project2"
+    Name = "wp-project"
   }
 }
 
