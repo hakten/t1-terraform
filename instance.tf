@@ -26,7 +26,7 @@ resource "aws_instance" "wp-project-instance" {
     prevent_destroy = false
   }
   tags = {
-    Name = "wp-project"
+    Name = "wp-project2"
   }
 }
 
