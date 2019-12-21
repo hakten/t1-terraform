@@ -13,7 +13,7 @@ resource "aws_instance" "wp-project-instance" {
       private_key = file(var.ssh_key_location)
       }
       inline = [
-        "sudo su -",
+        "sudo su -"
         ]
       } 
   lifecycle{
