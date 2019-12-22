@@ -1,5 +1,5 @@
-resource "aws_security_group" "web_server" { 
-  name        = "web_server" 
+resource "aws_security_group" "ssh_only" { 
+  name        = "ssh_only" 
   description = "allow ssh inbound traffic" 
   vpc_id      = "vpc-010b2c2926bc8ee6c" 
 
