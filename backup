@@ -10,7 +10,7 @@
         "sudo yum-config-manager --enable remi-php70",
         "sudo yum install php php-gd php-mysql -y",
         "sudo yum install wget -y",
-        "sudowget https://wordpress.org/latest.tar.gz",
+        "sudo wget https://wordpress.org/latest.tar.gz",
         "sudo tar -xf latest.tar.gz",
         "sudo cp -a wordpress/* /var/www/html",
         "sudo cp wp-config-sample.php wp-config.php",
