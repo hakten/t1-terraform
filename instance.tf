@@ -26,7 +26,7 @@ resource "aws_instance" "wp-project-instance-3" {
         "sudo wget https://wordpress.org/latest.tar.gz",
         "sudo tar -xf latest.tar.gz",
         "sudo cp -a wordpress/* /var/www/html",
-        "sudo cp wp-config-sample.php wp-config.php",
+        "sudo cp -a /var/www/html/wp-config-sample.php /var/www/html/wp-config.php",
         "sudo chown -R apache:apache /var/www/html",
         "sudo sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config",
         "sudo setenforce 0",
