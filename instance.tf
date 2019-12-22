@@ -1,4 +1,4 @@
-resource "aws_instance" "wp-project-instance-2" {
+resource "aws_instance" "wp-project-instance-3" {
   count = var.count_instance
   ami             = var.ami
   instance_type   = var.instance_type
