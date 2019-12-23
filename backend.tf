@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-task-tfstate"
-    key    = "infrastructure"
+    bucket = "terraform-tfstate-huseyin"
+    key    = "t1-terraform"
     region = "us-east-1"
   }
 }
