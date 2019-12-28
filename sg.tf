@@ -1,5 +1,5 @@
-resource "aws_security_group" "ssh_web" { 
-  name        = "ssh_web" 
+resource "aws_security_group" "ssh_only" { 
+  name        = "ssh_only" 
   description = "allow ssh inbound traffic" 
   vpc_id      = "vpc-010b2c2926bc8ee6c" 
 
@@ -24,8 +24,8 @@ ingress {
     cidr_blocks     = ["0.0.0.0/0"] 
   } 
 } 
-resource "aws_security_group" "ssh_deneme" { 
-  name        = "ssh_deneme" 
+resource "aws_security_group" "ssh_only" { 
+  name        = "ssh_only" 
   description = "allow ssh inbound traffic" 
   vpc_id      = "vpc-010b2c2926bc8ee6c" 
 
